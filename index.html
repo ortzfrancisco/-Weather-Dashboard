@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Weather Dashboard</h1>
+        </header>
+        <section id="search-section">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter city name">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="current-weather">
+            <script>document.querySelector('#currrent-weather').innerHTML = weatherHTML;
+            </script>
+        </section>
+        <section id="forecast">
+            <script>document.querySelector('#forecast').innerHTML = forecastHTML;
+            </script>
+        </section>
+        <section id="search-history">
+            <Script>document.querySelector('#history').innerHTML = historyHTML;
+            </Script>
+        </section>
+    </div>
+
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>
